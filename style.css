@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bg2{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/bg1.jpg);
+    background-position: center;
+    position: relative;
+    background-size: contain;
+}
+.bg3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+nav img{
+    width: 60px;
+}
+nav p{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links a{
+    box-shadow: inset 0 0 0 0 #db57a0;
+    color: #54b3d6;
+    margin: 0 -.25em;
+    padding: 0 .30rem;
+    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
+}
+.nav-links a:hover{
+    box-shadow: inset 100px 0 0 0 #ce2f2f;
+    color: white;
+}
+
+
+
+/* ----- Home Window ----- */
+
+.home{
+    display: flex;
+    height: 88%;
+    width: 90%;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: right;
+}
+.text-photo{
+    flex-basis: 50%;
+}
+.photos{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    cursor: auto;
+    margin: 10px 10px;
+    background-position: center;
+    background-size: cover;
+    border-color: #8b1b48;
+    box-shadow: 0 0 20px 0px rgba(123, 184, 195, 0.192);
+}
+.photos:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.photo1{
+    width: 205px;
+    height: 235px;
+    background-image: url(images/photo1.jpg);
+}
+.photo2{
+    width: 205px;
+    height: 235px;
+    background-image: url(images/photo2.jpg);
+}
+.photo3{
+    width: 205px;
+    height: 235px;
+    background-image: url(images/photo3.jpg);
+}
+.photo4{
+    width: 85mm;
+    height: 50mm;
+    background-image: url(images/photo4.jpg);
+}
+.photo5{
+    width: 85mm;
+    height: 50mm;
+    background-image: url(images/photo5.jpg);
+}
+.text-photo h1{
+    font-size: 65px;
+    font-family: 'Merienda', cursive;
+    color: rgb(255, 255, 255);
+}
+.text-photo p{
+    margin: 10px 0 40px;
+    font-size: 31px;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+}
+.visit-btn{
+    display: inline-flexbox;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: rgba(245, 245, 245, 0.519);
+    position: relative;
+    cursor: pointer;
+    font: bold;
+    width: 180px;
+    border-radius: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+.visit-btn:hover{
+    border: 1px solid black;
+    background: #aa3464;
+    transition: 1s;
+}
+
+
+
+/* ----- About and Contacts Window ----- */
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.about h1{    
+    font-size: 55px;
+    font-family: 'Poiret One', cursive;
+    color: rgb(255, 255, 255);
+}
+.about-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+.about-row h2{
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+.about-row p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 15px;
+}
+.about-col{
+    flex-basis: 31%;
+    background: #de7a7ab3;
+    border-radius: 10px;    
+    padding: 20px;
+    box-sizing: border-box;
+}   
+.about-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.visit{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+}
+.aa p{
+    font-size: 30px;
+}
+.ab a{
+    font-size: 20px;
+}
+
+
+/* ----- Service Window -----*/
+
+.service{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.service h1{    
+    font-size: 55px;
+    font-family: 'Poiret One', cursive;
+    color: rgb(255, 255, 255);
+}
+.offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.offer h2{
+    font-size: 30px;
+    font-family: 'Merienda', cursive;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.offer p{
+    margin: 10px 0 40px;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poiret One', cursive;
+}
+.offer-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: default;
+    text-align: right;
+}
+.offer-row h3{
+    font-family: 'Merienda', cursive;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.736);
+}
+.offer-row p{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.736);
+}
+.offer-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 200px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.natural{
+    background-image: url(images/natural\ lashes.jpg);
+}
+.doll{
+    background-image: url(images/doll-eye-volume-lashes.jpg);
+}
+.cat{
+    background-image: url(images/cat\ eye.png);
+}
+.blading{
+    background-image: url(images/microblading.jpg);
+}
+.shade{
+    background-image: url(images/microshade.jpg);
+}.threading{
+    background-image: url(images/threading.jpg);
+}
+.eyeliner{
+    background-image: url(images/tattoo\ eyelid.jpg);
+}
+.lipstick{
+    background-image: url(images/lip\ tattoo.jpg);
+}
+.diamond{
+    background-image: url(images/DIAMOND.jpg);
+}
+.hydra{
+    background-image: url(images/hydra.jpg);
+}
+.prp{
+    background-image: url(images/prp\ treatment.jpg);
+}.mani{
+    background-image: url(images/manicure.jpg);
+}
+.pedi{
+    background-image: url(images/pedicure.jpg);
+}
+.gel{
+    background-image: url(images/gel\ colors.jpg);
+}
+.acry{
+    background-image: url(images/acrylic\ extension.jpg);
+}
